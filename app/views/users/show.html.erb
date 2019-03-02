@@ -1,4 +1,16 @@
 <p id="notice"><%= notice %></p>
+	
 
-<%= link_to 'Edit', edit_user_path(@user) %> |
-<%= link_to 'Back', users_path %>
+<div>
+	<h3><%= @user.name %></h3>
+	<hr>
+	<h3><%= @user.email %></h3>
+	<hr>
+
+
+
+	<%= link_to 'Edit', edit_user_path(@user) %> |
+	<%= link_to 'Back', users_path %>
+
+
+</div>
