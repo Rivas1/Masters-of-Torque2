@@ -9,9 +9,11 @@ The above command should install all the gems listed in the gemfile that will al
 
 The backend I'm using is MYSQL2, and I'm running an Apache Server as well. Download and install Xampp to care of this. Run Xampp and start the Apache and MySQL servers. They should start up with no problem.
 
-Finally you are ready to run the application.
-In command prompt, navigate to the root directory of this app and enter: rails s
+You are almost ready to run the application.
+In command prompt, navigate to the root directory of this app and enter: rake db:create && rake db:migrate
+The above commmand will create the necessary database tables.
 
+Finally, enter: rails s
 Everything should work fine now and you may access this program at localhost:3000
 
 phpMyAdmin is available thanks to Xampp and may be accessed (while the app is running), at localhost/phpmyadmin
