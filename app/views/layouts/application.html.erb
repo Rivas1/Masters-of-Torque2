@@ -7,7 +7,12 @@
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-  </head>
+
+    <!-- Custom styles for this template -->
+    <%= stylesheet_link_tag 'cover' %>
+    <%= stylesheet_link_tag 'signin' %>
+
+</head>
 
   <body>
     <!-- Navbar (header) -->
@@ -20,7 +25,7 @@
               <a class="nav-link active" href="/">Home</a>
               <a class="nav-link" href="#">Vehicles</a>
               <a class="nav-link" href="/users">Users</a>
-             
+
             </nav>
           </div>
         </header>
@@ -29,7 +34,7 @@
     <!-- Footer (bottom of page) -->
         <footer class="mastfoot mt-auto">
           <div class="inner">
-            <p>Copyright (c) 2019 Masters of Torque Inc. All rights reserved by <a href="https://github.com/rivas1">@rivas1</a>.</p>
+            <p>Copyright &copy; 2019 Masters of Torque Inc. All rights reserved by <a href="https://github.com/rivas1">@rivas1</a>.</p>
           </div>
         </footer>
       </div>
