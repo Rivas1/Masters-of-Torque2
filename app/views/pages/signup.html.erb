@@ -16,8 +16,10 @@
 </style>
 
 <form class="form-signin">
-  <img class="mb-4" src: image_tag('logo.png') alt="" width="72" height="72">
-
+  <!-- <img class="mb-4" src: image_tag('logo.png') alt="" width="72" height="72"> -->
+  <div class="bd-placeholder-img">
+    <%= image_tag('logo.png', width: '72px', height: '72px') %>
+  </div>
   <h1 class="h3 mb-3 font-weight-normal">Please sign in</h1>
   <label for="inputEmail" class="sr-only">Email address</label>
   <input type="email" id="inputEmail" class="form-control" placeholder="Email address" required autofocus>
